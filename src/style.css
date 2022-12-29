@@ -112,21 +112,29 @@ body {
 }
 
 .findme {
-    font-size: 61px;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
-.aboutme ul{
-    margin-top: 50px;
+.offer ul{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap:5px;
 }
 
-.aboutme ul li {
+.offer ul li {
     margin-left: 5px;
+    transition: all 500ms;
 }
 
-.aboutme button {
+.offer ul li:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(1px 1px 2px #7456FF);
+}
+
+.offer button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -137,6 +145,10 @@ body {
     border: none;
     text-decoration: none;
     filter: drop-shadow(0 0 3px #7456FF);
+}
+
+.offer button:hover {
+    cursor:pointer;
 }
 
 .offer {
@@ -162,6 +174,9 @@ body {
     max-width: 29vw;
     text-align: center;
 }
+
+
+
 
 @media only screen and (max-width: 725px) {
     .first_title {
