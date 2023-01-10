@@ -23,7 +23,7 @@ const App = () => {
                     <img src="https://i.pinimg.com/originals/17/29/4c/17294ce8fe0d49e9da696c2772461773.png" alt="" className="aboutme_image" height={150}/>
                 </div>
             </section>
-            <section className="offer">
+            {/* <section className="offer">
                     <div className="offer_title">What do I Offer</div>
                     <div className="offer_description">Creation of a professional website the way the client wants!</div>
                     <ul>
@@ -37,7 +37,7 @@ const App = () => {
                             <button><BsCodeSlash size="15px" color='white'/></button>
                         </li>
                     </ul>
-            </section>
+            </section> */}
         </div>
     )
 }
