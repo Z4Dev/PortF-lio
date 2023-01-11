@@ -40,7 +40,7 @@
 
 @keyframes move {
     to {
-        transform: translate(35vw,60vh);
+        transform: translate(15px,50px);
     }
 }
 
@@ -82,9 +82,9 @@ body {
 }
 
 .aboutme_image {
-    position: static;
+    /* position: static;
     margin-top: 150px;
-    margin-left: 12vw;
+    margin-left: 12vw; */
     animation: rotate 80s linear infinite both,move 180s linear alternate both;
 }
 

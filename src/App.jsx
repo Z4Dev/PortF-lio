@@ -5,8 +5,15 @@ import { Particle } from './components/particles';
 import {FaDiscord} from 'react-icons/fa'
 import {AiFillGithub} from 'react-icons/ai'
 import {BsCodeSlash} from 'react-icons/bs'
+import { useState } from 'react';
 
 const App = () => {
+    const handleDrag = (e) => {
+        console.log(e)
+        e.target.style.position='fixed';
+        e.target.style.left = `${e.clientX}px`
+        e.target.style.top = `${e.clientY}px`
+    }
     return (
         <div>
             <Navbar/>
@@ -20,7 +27,7 @@ const App = () => {
                     <div className="description">I'm a person who has a keen interest in web development and software development. I'm known as "Z4" on the internet and I'm currently studying reactjs and intend to work in a company that involves programming after finishing the course. I aim to improve my skills day by day, so I am fully focused on programming.</div>
                 </div>
                 <div className="image">
-                    <img src="https://i.pinimg.com/originals/17/29/4c/17294ce8fe0d49e9da696c2772461773.png" alt="" className="aboutme_image" height={150}/>
+                    <img src="https://i.pinimg.com/originals/17/29/4c/17294ce8fe0d49e9da696c2772461773.png" draggable={true} onDragEnd={handleDrag} alt="" className="aboutme_image" height={150} />
                 </div>
             </section>
             {/* <section className="offer">
